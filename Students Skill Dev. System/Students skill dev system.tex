@@ -1,0 +1,160 @@
+\documentclass[conference]{IEEEtran}
+
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+\begin{document}
+
+\title{\textbf{Students Skill Development System}}
+
+\author{\IEEEauthorblockN{Muhammad Mahi- Al- Jawad}
+
+\IEEEauthorblockA{Department of Computer Science and Engineering\\
+International Islamic University Chittagong\\
+Metric ID: C153010\\
+Email: br.mahialjawad@gmail.com}
+\and
+
+\IEEEauthorblockN{Md. Fakrul Islam Khan}
+\IEEEauthorblockA{Department of Computer Science and Engineering\\
+International Islamic University Chittagong\\
+Metric ID: C153017\\
+Email: fokrulkhan837@gmail.com}}
+
+\maketitle
+
+
+% As a general rule, do not put math, special symbols or citations
+% in the abstract
+\begin{abstract}
+Our present Grading Point System i.e. CGPA Oriented System in our universities sometimes fails to judge a student's practical skill, rather it judges only theoretical knowledge based on a particular syllabus and for a period of time e.g. semester. Eventually, such grading points very often becomes meaningless to the students of the field or departments where technical and practical skill is a must. To solve this phenomena we offer a \textit{System} where we can judge his skill based on his working field by generating a \textit{Skill Point(SP)} by our \textit{System} which includes academic CGPA as well as his skill on his practical field of work with which we can reduce the judging error in our traditional CGPA system. \\\\\\
+\end{abstract}
+
+
+\IEEEpeerreviewmaketitle
+
+
+
+\section{Introduction}
+ 
+ The idea involves developing a \textit{Web Tool} or a \textit{System} which should be embedded in our university Student's Web Panel(SWP). The functionality of the \textit{System} is to generate a \textit{Skill Point(SP)} for a student of a particular department and semester according to his skill on his practical field of work along with his academic result. So, this \textit{Skill Point(SP)} would reduce the judging error in the traditional academic GPA. With this \textit{System} mostly students will be benefited of the departments where the practical skill is very significant for job fields. The examples could be Engineering Students whether it is CSE, EEE or some others. The basic requirement of an Engineer is that he has to be capable of doing his practical work in his field. If he is not, off  course all of his certificates or academic achievements will really be meaningless. Though, mostly benefited students from this idea will be the students of Science and Technology that does not imply that our system is unable to handle the case of other departments like Literature or Law. Our system should be capable of handling such \textit{Exception Cases}. The \textit{Exception Cases} includes two \textit{Sub-exception Case}s. First one is the departments which do not involve any practical field works at all and the former is the case where departments involve only on-site activities or competitions as skill measurer. Both the cases should be handled by our proposed \textit{System} which will be discussed later.  
+ \\
+ \\
+ \\
+ 
+
+\section{Motivation behind the Idea}
+We cannot say rapidly that our traditional academic system fails to judge the student skill in everywhere but we must admit that there are errors in judging to some extend that could be proven by some simple analysis to our surroundings, especially in country like Bangladesh. The number of engineers graduates every year more than 47\% of them remain unemployed till the next three years[1]. Though not all of them remain unemployed only because of not having skills but it is one of the main reason to remain unemployed. It is an astonishing fact that 75\% students of Engineering and technology do not work in their respective field[2]. That is they changes their career later after doing graduation and getting an Engineering degree. It is also found in another research that more than 48\% of Engineering students have left Engineering between 2003 to 2009 before graduation[3]. Experts suggested qualities that an engineer should have is all about \textit{Developing Skills} in various field[4]. No where it is suggested to have a good academic result. This suggestion to develop skill is especially for those who are studying subjects which are somehow related with science and technology or in which where practical event performance does matter for career. From our traditional academic result if someone gets A+ on his course it cannot ensure us that he is master at that specific course. Let's take an example, in our universities if a student of CSE takes 'Java' or 'C++' course in a particular semester, he attends class lectures, does notes well for that course and finally in his examination he gets an A+ for his industrious nature. But after cutting that good figure in academic result if he does not practices those skills by developing applications with Java or by solving problems in the contests or online judges with C++ his academic result will really not admissible. Another example could be given related to EEE background. If a students does well in his 'Electrical Drive' course by understanding and studying well. He should have a good knowledge about dc motors. But if he does not makes projects using motors or such equipments he read about, his those theoretical knowledge will have no value. Also as he is studying that specific subject only for a fixed period of time(say, semester) if he does not work with his gained knowledge further, may be he had cut a good result in spite of that he will never be able to implement those knowledge as well as most probably he will forget those stuff even. That is why renowned universities throughout the worlds arranges different \textit{skill development programs} for their students rather only suggesting to have a good academic result. Also the companies those recruits employee for their technical work they also demand skilled employees and recruits by checking their experience in work. Hence, it is undeniable that our traditional grading point system includes error or it is inefficient to judge the skills of student. To reduce the error we are offering our \textit{System} which will generate a \textit{Skill Point(SP)} instead of GPA. And that \textit{SP} will take in account skill of a students along with his academic result.\\\\\\ 
+
+
+\section{Relevant Work}
+It is a rare case that ever any university included \textit{Skill Development Performance} in their academic result so far. Hence such work are not present yet. But off course unofficially many universities give advantages to the students who are skilled in their practical working field. Obviously, universities of other countries arrange many \textit{Skill Development Programs}, they employs \textit{trainer} to train their students, they arranges contests, debates and other \textit{Skill based Competitions} and their students willingly take part in those programs. Extra ordinary students are rewarded by the university in fact, but \textit{no such integration of academic result with practical performance in work} are done before. But they encourage their students by above mentioned steps. In practical, though universities only pay heed about academic study but the renown companies throughout the world are recruiting based on skill of a employee. We can take example about Google, Microsoft, Facebook for that. They recruits based on skill[5]. In fact many of the companies does not require any Compute Science degree for Computer Science related jobs. What they only want is \textit{Work} and employees \textit{Skill} on it[6]. But like above introduced \textit{Skill Point(SP)} there are \textit{Rating} in \textit{Codeforces} which is by \textbf{Harbour Space University}[7] and also \textit{Uva Online Judge} which is also with the collaboration of \textbf{University of Valladolid}[8]. \\\\\\
+
+\section{Methodology}
+The implementation of this \textit{Students Skill Development System} depends upon calculating the \textit{Skill Point(SP)} which will take in account a students practical performance with his GPA. The terms required to generate \textit{Skill Point}(which we will indicate only \textit{SP}) and all the relevant terms will be discussed as follows.\\
+
+\subsection{\textbf{SP}}
+\textit{SP} or \textit{Skill Point} is discussed earlier as the main goal of our \textit{System} is to generate \textit{SP}. The value of \textit{SP} includes the value of \textit{GPA}, \textit{Field} and \textit{On-site Events}.\\
+
+\subsubsection{\textbf{GPA}}
+This is a part of \textit{SP} and the percentage of \textit{GPA} in the \textit{SP} will be decided by the department \textbf{expert}s. \textit{GPA} is calculated in the traditional way we have.\\
+
+\subsubsection{\textbf{Field}}
+ There are different departments in any institute and according to each different departments there are different \textit{Skill Development Activities} which involves \textit{Skill Development}. Say for department of CSE \textit{Competitive Programming} or \textit{Hackathon} could be a \textit{Skill Development Activity} but in the case of department of EEE it is not. There could be different \textit{Skill Development Activity} like \textit{Robotics Competition} or others. Which simply implies that there are different \textit{Skill Development Activity} for different departments. We can name those as \textit{Field}. So we can say that, there are different \textit{Field}s for different departments. Example of such \textit{Field}s could be \textit{Competitive Programming}, \textit{Hackathon}. For each Department there could be many \textit{field}s also. Just like any student of Computer Science can be interested in Competitive Programming but some other could be interested in Web Development so their choice will Hackathon. Off course department \textbf{Expert}s of the university will be in charge to make some particular \textit{field} compulsory for the students of any particular semester and particular department and they are capable of making some others optional for the students by analyzing current \textit{trend} of the Job fields. The \textit{field} offering process can be compared to the Subject offered to a student while the student is registering his course for the semester. Like this students also will have some choice to select \textit{field}s from the offered \textit{field}s for his following semester. This is a part of \textit{SP} and the percentage of \textit{field} in the \textit{SP} will be decided by the department \textbf{expert}s too. In turns \textit{Field} also includes \textit{Sub-fields}.\\
+ 
+ i) \textbf{Sub-field:} Each of the \textit{Field} could be divided in many \textit{Sub-field}s. The example of \textit{Sub-field} could \textit{Codeforces}, \textit{Topcoder}, \textit{UVa Online Judge} or others. For each \textit{field} of a particular semester of any particular department a \textit{Target} will be given by the \textit{Expert}s as a syllabus or course outline is provided to the students by the university. If any student fulfills his target 100\% then he should get that percent of marks in that \textit{Subfield}. For example, for third semester a \textit{Target} is given that a students \textit{Codeforces} rating should be above 1150, he should solve at least 50 problems in \textit{Uva Online Judge} or \textit{LightOJ}. Here \textit{Codeforces} or \textit{Uva Online Judge} are the examples of \textit{Sub-field}s. \textbf{All the students have to provide his sub-field account information} to our \textit{System} so that our System will automatically fetch his performance information in those \textit{Sub-field}s and will be able to calculate the Points he obtained in \textit{Sub-field}s by the percentage of \textit{Target} he fulfilled. With the all values of \textit{Sub-field}s we can calculate the final value of any particular \textit{Field}.\\
+
+ 
+\subsubsection{\textbf{On-site Event}}
+The data of performance could be fetched through online in those activities which are online events as explained earlier. But in the case of the events which are not online rather those are held ofline, performance on such events to trace is difficult. For example, a debate competition. Here the data couldn't be fetched by the system automatically via online. Hence, to handle such cases, we involve a process called \textit{claim}. If a student participates in any predefined(by the \textit{expert}s) event then according to his performance on that even he has to claim in our system. And manually his \textit{claim} will be verified by the officers. After verification of his \textit{claim} a predefined percentage of his performance will be added in his \textit{point} as the \textit{Event value}.\\\\\\
+
+\section{Output}
+Let us, denote \textit{Skill Point} by the variable $sp$, \textit{gpa} by $gpa$, \textit{field}s by $f$, \textit{sub-field}s by $sf$ and \textit{on-site event}s by $e$.
+
+Now the output or the $sp$ is defined by,
+
+$$sp= x\% \times gpa + y\% \times f + z\% \times e$$
+$$f= i_{1}\%\times f_{1}+ i_{2}\%\times f_{2}+i_{3}\%\times f_{3}+... ... ...+i_{n}\%\times f_{n}$$
+$$f_{i}= j_{1}\%\times sf_{1}+j_{2}\%\times sf_{2}+j_{3}\%\times sf_{3}+... ... ...+j_{m}\%\times sf_{m}$$
+$$e= k_{1}\%\times e_{1}+k_{2}\%\times e_{2}+k_{3}\%\times e_{3}+... ... ...+k_{p}\%\times e_{p}$$
+
+Here, the value of $sf$ will be directly fetched from the \textit{Sub-field}s, as students will be logged in from our site or system to those \textit{Sub-field}s. $n$ is the number \textit{field}s in any department, $m$ is the number of available \textit{sub-field}s for a student and $p$ is the number of on-site events. Other declared variables are discussed earlier. From these equations finally we can calculate the \textit{SP} value for a student. \\
+
+\textbf{\textit{\underline{NB:}}} The values of $x$, $y$, $z$, $i$, $j$ and $k$ will be decided by the \textit{Department Expert}s. Anyone employed by authority, who has idea about the trending job market for any particular department whether he is a teacher or any trainer could be a \textit{Department Expert}.\\\\\\
+
+\section{Comparative Analysis}
+In the earlier sections we discussed about the flaws in traditional system that why the academic result fails to judge the expertise and skill of a student. Our offered \textit{SP} includes \textit{GPA} with the department based skill development activity performance. Thus with which we can reduce the percentage of error in our academic system.\\\\\\
+
+\section{Exceptional Cases \& Feasibility Issues}
+\subsubsection{\textbf{Comparing between different Activities}}
+Let us assume that a student has selected \textit{lightoj} as his one of the \textit{sub-field} and another student has selected \textit{Uva Online Judge}. The question arises that how can we \textbf{compare} among different \textit{Sub-field}s or between different \textit{field}s or between different events? Well, the situation is difficult but the solution is not that so. How a university management allocates credits on different subjects? The answer is, they compares the outlines and importance of that subject in the present situation for developing skill. This is How a university management decides that the \textit{Web Programming} course should be of two credits whereas for \textit{Java Programming} they allocates two credits. \textit{In the similar way by legislation \textbf{Department Expert}s will be in charge to differentiate the importance between different fields, sub-fields or events in our system.} \\
+\subsubsection{\textbf{Departments where no such Skill Development Activities required}}
+There are some departments where there is no such skill development activities at all e.g. Department of English or Bengali Literature or Arts. One may think that the offered \textit{System} is not feasible because it handles only the cases of \textit{Dept. of Science and Technology}. Well, let us have a look in our equation of calculating $sp$.
+
+$$sp= x\% \times gpa + y\% \times f + z\% \times e$$
+
+If we simply set the value of $y$ and $z$ to a \textit{constant value zero} and $x$= 100 then the problem is solved for this case. Then the equation becomes,  
+\\
+$$sp= 100\% \times gpa$$
+or, $$sp= gpa$$
+
+That implies, the departments which does not involve any kinds of skill development activities their \textit{SP} will be their \textit{GPA}.\\\\\\
+
+
+
+\section{Result}
+Hence we get the value of \textit{SP} which minimizes the error in academic result and encourages the students to develop his skill for his future career rather remaining in illusion of healthy grading point without skill. The concept of \textit{SP} not only includes skill development activities but also the grading point. It also can in parallel handle the cases of other departments which does not involve skill development activities at all. \\\\\\
+
+
+\section{Conclusion}
+The main goal of the proposed system is to minimize the error in academic grading point system. Which can assists a student in growing his skills on practical working fields as well as his theoretical knowledge as our system also includes $x\%$ of GPA. It lets a student know about his position based on his skill, where he should be after his graduation. So that, he can take required steps improving himself. This system can also be an assistant for a student for making him ready for the upcoming future challenges in his career and job fields.\\\\\\
+
+
+
+
+\section*{Acknowledgment}
+Al'hamdulillah for everything Allah(swt) has blessed us with. A special thanks to-\\
+Tanveer Ahsan Sir\\
+Shamsul Alam Sir\\
+Brother Jamil As-ad\\
+Hasnain Heickel Jami Sir\\
+
+
+For inspiring and making us understand of the importance of growing skill as an Engineer. May Allah(swt) bless them all with knowledge and his mercy.  
+\\\\\\
+
+
+\begin{thebibliography}{1}
+
+\bibitem{IEEEhowto}
+\textbf{The daily Star, 8th March, 2015}
+\bibitem{IEEEhowto}
+\textbf{Washington Post}, \textit{http://shortsleeveandtieclub.com/what-percentage-of-engineering-graduates-actually-work-in-their-respective-fields/}
+\bibitem{IEEEhowto}
+\textbf{National Center for Educational Statistics}
+\textit{http://shortsleeveandtieclub.com/what-percentage-of-engineering-graduates-actually-work-in-their-respective-fields/}
+\bibitem{IEEEhowto}
+\textbf{The Quality Magazine}
+\textit{https://www.qualitymag.com/blogs/14-quality-blog/post/91859-five-things-a-quality-engineer-should-know}
+\bibitem{IEEEhowto}
+\textbf{Computer Programming Scholarship}
+\textit{https://www.bestvalueschools.com/computer-programming-scholarships/}
+\bibitem{IEEEhowto}
+\textbf{How google pics new employees}
+\textit{https://careers.google.com/how-we-hire/}
+\bibitem{IEEEhowto}
+\textbf{Codeforces- Harbour Space University}
+\textit{https://codeforces.com/}
+\bibitem{IEEEhowto}
+\textbf{Uva Online Judge- University of Valladolid}
+\textit{https://uva.onlinejudge.org/}\\
+
+
+
+\end{thebibliography}
+
+
+
+
+\end{document}
+
+
